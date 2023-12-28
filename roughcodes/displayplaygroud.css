@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+    padding: 25px;
+    /* display: block; */
+    /* display: inline; */
+    display: inline-block;
+}
+
+#box1 {
+    background-color: blue;
+    /* display: none; */
+}
+#box2 {
+    background-color: yellow;
+    /* display: none; */
+    /* visibility: hidden; */
+}
+#box3 {
+    background-color: red;
+}
