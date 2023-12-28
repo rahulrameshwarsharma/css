@@ -1,8 +1,40 @@
-
-#outer {
-    font-size: 25px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#inner {
-    font-size: 10px;
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#box {
+    background-color: blue;
+}
+
+.heading {
+    color: red;
+}
+
+.boxModel {
+    height: 300px;
+    width: 300px;
+    background-color: green;
+    border-radius: 50%;
+    margin: 25px;
+}
+
+.boxcircle {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+.boxcirclesquare {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: red;
 }
