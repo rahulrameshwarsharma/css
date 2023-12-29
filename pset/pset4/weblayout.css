@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    margin-right: 200px;
+    color: #f08804;
+}
+#navbar {
+    height: 60px;
+    background-color: #0f1111;
+}
+#content {
+    color: white;
+}
+#boxgreen {
+    background-color: green;
+}
+#boxyellow {
+    background-color: yellow;
+}
+#boxblue {
+    background-color: blue;
+}
+
+.contentbox {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}

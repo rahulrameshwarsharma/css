@@ -2,13 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    color: white;
 }
 
 a {
     text-decoration: none;
     margin-right: 200px;
+    color: white;
 }
 
 #navbar {

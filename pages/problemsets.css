@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    margin-right: 200px;
+    color: #f08804;
+    display: block;
+}
+
+body {
+    background-color: lightblue;
+}
+
+#navbar {
+    height: 60px;
+    /* background-color: #0f1111; */
+    background-color: #f08804;
+    text-align: center;
+}
+
+.content {
+    background-color: antiquewhite;
+}
