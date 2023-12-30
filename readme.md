@@ -25,4 +25,14 @@ because in css, changes will be display as per the last executed code.
     ** display none property removes elements from the page, it doesn't reserves any space for the elements.
     ** visibility: hidden property reserves space for the element it just disappears form the place.
 
-    
+## units in css
+    px is the absolute unit in css, where as %, em, rem, vh and vw are the relative units.
+    %: it is used to give value according to parent and child relativity.
+    em: it is relative to the font size of the parent, 2em = 2 * font-size of the  parent 
+
+## positions in css
+5 positions: static, absolute, relative, fixed, sticky.
+    static is the default, no other properties can be applied and have no effect.
+    absolute 
+
+    - [test link] (http://www.google.com)
