@@ -39,4 +39,11 @@ because in css, changes will be display as per the last executed code.
     - fixed also uplifts element like absolute but it is positioned relative to browser.
     - sticky positioned based on scroll position.
 
-##
+## background image
+- to use use "backgroung-image: url("img/image.jpg");
+    - three size customization are available
+        - cover, contain and [auto: defualt (contain)]
+    - we usually use cover for better visibility.
+
+## flexbox
+
