@@ -27,12 +27,16 @@ because in css, changes will be display as per the last executed code.
 
 ## units in css
     px is the absolute unit in css, where as %, em, rem, vh and vw are the relative units.
-    %: it is used to give value according to parent and child relativity.
-    em: it is relative to the font size of the parent, 2em = 2 * font-size of the  parent 
+- %: it is used to give value according to parent and child relativity.
+- em: it is relative to the font size of the parent, 2em means (2*font-size of the  parent).
+- rem: (root em) it is relative to font size of text in root elements (like body or html).
 
 ## positions in css
-5 positions: static, absolute, relative, fixed, sticky.
-    static is the default, no other properties can be applied and have no effect.
-    absolute 
+- **positions**: static, absolute, relative, fixed, sticky, z-index.
+    - static is the default, no other properties can be applied and have no effect.
+    - relative makes element relative to itself. (position: fixed; right: 50px;) In this case element move 50px from its current position.
+    - absolute uplift element from it's position relative to it's closest ancestor, and any nearby element automatically occupies it's place, as this uplifted, but at the same position.
+    - fixed also uplifts element like absolute but it is positioned relative to browser.
+    - sticky positioned based on scroll position.
 
-    - [test link] (http://www.google.com)
+##
