@@ -73,4 +73,46 @@ because in css, changes will be display as per the last executed code.
 - flex-shrink: allows to shrink item in any speed with respect to other items i.e., (flex-shrink: 1.5;).
 - flex-grow: allows to grow item in any speed with respect to other items i.e., (flex-grow: 2.5;).
 
+**align-items VS align-self**
+- align-items applies on the container whereas align-self applies on individual items.
+- align-self have higher priority then align-items.
 
+## Media Queries
+- Media queries make page responsive according to page size
+
+- **keep color blue till 600px**
+    - @media(max-width: 600px) {
+                                    div {
+                                        background-color: blue;
+                                    }
+                                }
+-   **This above code turns the div into blue exactly before page width 600px.*
+
+- **keep color red exactly at 600px**
+    - @media(width: 600px) {
+                                div {
+                                    background-color: red;
+                                } 
+                            }
+-   **This above code turns the div into red exactly at page width 600px.**
+
+- **keep color blue after 600px**
+    - @media(min-width: 600px) {
+                                    div {
+                                        background-color: blue;
+                                    }
+                                }
+
+-   **This above code turns the div into blue exactly after page width 600px.*
+
+**combine media queries together using "and" keyword**
+
+@media (min-width: 200px) and (max-width: 400px) {
+    div {
+        background-color: orange;
+    }
+}
+
+## Advance css
+-    **Transitions**
+    - 
