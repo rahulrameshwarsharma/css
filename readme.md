@@ -46,4 +46,31 @@ because in css, changes will be display as per the last executed code.
     - we usually use cover for better visibility.
 
 ## flexbox
+- There are 4 flexbox directions: row, row-reverse, column, column-reverse.
+- there are two axis in flex property. ( Main axis and Cross axis)
+    - row is the default direction i.e., from left to right.
+    - row-reverse is from right to left. (flex-direction: row-reverse;)
+    - column arranges all the elements vertically from (top to bottom).
+    - column-reverse changes elements vertically from (bottom to top).
+
+- ## flex properties used for flex containers
+- total flex properties I learned are
+- Justify-content, flex-wrap, align-items, align-content, align-self, flex-shrink, flex-grow.
+    - justify-content: (flex-start, flex-end and center) => this three properties used to ship content at left, right and center without changing the direction of content.
+        - space-around make equal space between elements but half of space in both the end of the element.
+        - space-between makes equal space between all the elements but keeps no space in end of the element.
+        - space-evenly makes equal space between all the elements including both the end of elements.
+- **when we want all content in center**
+    - give container "flex", keep flex-direction to "row" and justify-content to "center". It will align every item in center of box with no efforts.
+
+- flex-wrap
+    - Has 3 properties nowrap/wrap/wrap-reverse
+    - used to wrap content inside the container.
+    - **wrapping items creates space which can be solved by align-content**
+- align-items: aligns items towards the cross-axis.
+- align-content: alignment of space between and around the content
+    - when we wrap content, empty space remains between the content, so **align content deals with that empty space**
+- flex-shrink: allows to shrink item in any speed with respect to other items i.e., (flex-shrink: 1.5;).
+- flex-grow: allows to grow item in any speed with respect to other items i.e., (flex-grow: 2.5;).
+
 

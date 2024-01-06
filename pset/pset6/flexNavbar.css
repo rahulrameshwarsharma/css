@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+li {
+    list-style-type: none;
+}
+div {
+    /*  */
+}
+
+.maincontent {
+    background-color: pink;
+    margin: 10px 0px 25px 0px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* this is to put div in center */
+
+/* #extra {
+    display: flex;
+    justify-content: center;
+} */
+
+/* Make one small div inside a big div and align them in center */
+
+#outer {
+    height: 400px;
+    width: 400px;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#inner {
+    height: 100px;
+    width: 100px;
+    background-color: darkorchid;
+}
