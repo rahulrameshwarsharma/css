@@ -1,4 +1,14 @@
 
+*07 Jan 2024 Sunday morning 7am*
+## Put the below code at the top of every css file
+- **Below code will help to fix any default css already applied**
+    * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: border-box;
+}
+
 ##  css changes priority defined by the order of tag in head tag
 <head>
 if styles tag is written first, then it will be excuted first and then external css, which gives output of external css
@@ -114,5 +124,107 @@ because in css, changes will be display as per the last executed code.
 }
 
 ## Advance css
--    **Transitions**
-    - 
+*Pseduo class*
+- hover : it allows element to change it's css property when we take cursor on them.
+
+- Active : it allows element to change it's css property when we click on them.
+
+-    ## Transitions
+    - transition-property: property that need transition (font-size, width etc.)
+    - transition-duration: for how long that effect lasts (2s/4ms)
+    - transition-timing-function: In how many steps that transition need to take place (ease-in/ease out/linear/steps).
+    - transition-delay: after how much time the transition need to start (2s/4ms). And after how many second the transition need to restart after completion.
+
+    - *All the transitions can apply in one line*
+        - transition: propertyName|duration|timing-function|delay
+        - transition: font-size 2s ease-in-out 0.2s;
+        - if there not any specific property, then use "all" to apply in every property of that element.
+        - transition: all 2s ease-in 1s;
+- ## CSS Transform
+    - used to apply 2D and 3D transformations to an element
+
+- **Rotate**
+    - *Rotate property is used to rotate element to a degree*
+
+-    **this css transform degree property can be used to create a beautiful loarders manually**
+    - Rotate property all types are
+        - rotate: rotate:45deg; | rotateX: 45deg; | rotateY: 45deg; | rotateZ: 45deg;
+    - This is the way to use "rotate" property in css code
+        - transform: rotate(45deg);
+
+- **Scale**
+    - *Scale property is used to increase and decrease overall size of the element*
+        - Scale property all types are
+            - scale(2);| scale(0.5);| scale(1,2);| scaleX(0.5);| ScaleY(0.5);
+        - This is the way to use "scale" property in code
+            - transform: scale(2);
+    
+- **Translate**
+    - *Translate property is used to move forward and backward complete element along the X & -X and Y & -Y axis.*
+
+        - Translate property all types are
+            - translate(20px);| translate(20px, 50px);| translateX(20px);| translateY(20px);
+        - This is the way to use "translate" property in code
+            - transform: translate(20px);
+
+- **Skew**
+    - *Skew property is used to stretch an element from both the corners*
+        - This is the way to use "skew" property in code
+            - transform: skew(45deg);
+
+-   ## Animation
+    - *To animate the element using css we use animation property*
+
+        - For this, make an "animation keyframe" template first and then "write all properties"
+        - "keyframes" are like blueprint for the animation.
+        - To make template
+            - @keyframe AnimationName {
+                from {
+                    font-size: 20px;
+                }
+                to {
+                    font-size: 40px;
+                }
+            }
+        - Instead of "from" and "to", "%" can also be used.
+            - @keyframe AnimationName {
+                0% {
+                    font-size: 20px;
+                }
+                50% {
+                    font-size: 30px;
+                }
+                100% {
+                    font-size: 40px;
+                }
+            }
+
+            - Basically "from" is "0%" and "to" is "100%".
+
+        - Animation properties all the types are:
+            - animation-name| animation-duration| animation-timing-function| animation-delay| animation-iteration-count(infinite,inherit,initial,5)| animation-direction(normal,reverse,alternate,alternate-reverse)|
+        
+        - This is the way to apply animation
+            - div {
+                Animation-name: colorAnimate;
+                animation-duration: 3s;
+                animation-timing-function: ease-in;
+                animation-delay: 0s;
+                animation-iteration-count: 5s;
+                ani
+            }
+        - **Above code can also be written in one line**
+        - *Animation property shorthand*
+        - animation: animationName, duration, timing-function, delay, count, direction
+
+            - div {
+                animation: colorAnimate 2s ease-in 0s infinite normal;
+            }
+            @keyframes colorAnimate {
+                from {
+                    background-color: red;
+                }
+                to {
+                    background-color: blue;
+                }
+            }
