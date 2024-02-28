@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+
+/* ########## All the below css are for NavBar ######## */
+
+.navbar {
+    height: 60px;
+    background-color: #0F1111;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+                    /* For Logo design */
+.nav-logo {
+    height: 50px;
+    width: 140px;
+}
+
+.logo {
+    background-image: url("./img/AmazonLogo.jpeg");
+    height: 50px;
+    
+    background-size: cover;
+    /* background-color: #ffffff; */
+
+}
+
+.navBorder {
+    border: 2px solid transparent;
+    height: 50px;
+    margin: 5px 2px 5px 0px;
+}
+
+.navBorder:hover {
+    border: 2px solid #FFFFFF;
+}
+
+
+    /* For second nav Item design */
+.navAddress {
+
+}
+.element1 {
+    color: #CCCCCC;
+    font-size: 0.8rem;
+    margin-left: 15px;
+}
+
+.element2 {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
