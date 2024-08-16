@@ -164,3 +164,54 @@ body > div {
     margin-top: 1.8rem;
     border-radius: 0.4rem;
 }
+
+/* -------------------------------- SHAPE 4 (Eye) --------------------- */
+
+.shape-4 {
+    background-color: #0b2429;
+}
+
+.shape-4 span:nth-child(1) {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    background: #998235;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+}
+.shape-4 span:nth-child(1)::before, .shape-4 span:nth-child(1)::after {
+    content: "";
+    width: 4rem;
+    height: 4rem;
+    background: #998235;
+    position: absolute;
+    transform: rotate(45deg);
+}
+.shape-4 span:nth-child(1)::before {
+    left: -0.8rem;
+}
+.shape-4 span:nth-child(1)::after {
+    right: -0.8rem;
+}
+
+
+.shape-4 span:nth-child(2) {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    background-color: #f3ac3c;
+    position:absolute;
+    z-index: 1;
+    border: 0.8rem solid #0b2429;
+}
+
+.shape-4 span:nth-child(3) {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    background-color: #0b2429;
+}
