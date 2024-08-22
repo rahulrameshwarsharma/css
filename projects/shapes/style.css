@@ -257,3 +257,34 @@ body > div {
 .shape-5 div span:nth-child(4) {
     width: 6.4rem;
 }
+
+/* -------------------------------- SHAPE 6 (Bell) --------------------- */
+
+.shape-6{
+    background: #312222;
+    flex-direction: column;
+}
+
+.shape-6 span:nth-child(1) {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem 2rem 0rem 0rem;
+    background: #efa93b;
+    margin-bottom: -1.2rem;
+}
+
+.shape-6 span:nth-child(2) {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 4rem 4rem 1rem 1rem;
+    background: #e08027;
+    z-index: 1;
+}
+
+.shape-6 span:nth-child(3) {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0 0 2rem 2rem;
+    background: #824b20;
+    margin-bottom: -0.6rem;
+}
