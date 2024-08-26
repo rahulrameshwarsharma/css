@@ -10,6 +10,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    /* grid-template-columns: 1fr; */
     gap: 0.3rem;
 }
 
@@ -82,8 +83,8 @@ body > div {
 }
 
 .shape-2 div {
-    width: 8rem;
-    height: 10rem;
+    width: 7rem;
+    height: 9rem;
     background-color: #060f55;
     border-radius: 0 0 4rem 4rem;
     display: flex;
@@ -108,7 +109,9 @@ body > div {
     height: 8rem;
     background-color: #060f55;
     position: absolute;
-    bottom: 0;
+    margin-bottom: -15rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    /* bottom: 0; */
 }
 
 /* -------------------------------- SHAPE 3 (Skull) --------------------- */
@@ -287,4 +290,143 @@ body > div {
     border-radius: 0 0 2rem 2rem;
     background: #824b20;
     margin-bottom: -0.6rem;
+}
+
+/* -------------------------------- SHAPE 7 (Pumpkin halloween) --------------------- */
+
+.shape-7 {
+    background: #293462;
+}
+
+.shape-7 div {
+    width: 10rem;
+    height: 10rem;
+    background-color: #fe5f55;
+    border-radius: 5rem 5rem 3rem 3rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* align-items: start; */
+    justify-items: center;
+    overflow: hidden;
+}
+.shape-7 div span {
+    background: #fff1c1;
+}
+.shape-7 div span:nth-child(1), .shape-7 div span:nth-child(2){
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-top: -2.4rem;
+}
+
+.shape-7 div span:nth-child(3), .shape-7 div span:nth-child(4) {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+.shape-7 div span:nth-child(5) {
+    width: 2.5rem;
+    height: 0.5rem;
+    border-radius: 0.2rem;
+    position: absolute;
+    bottom: 1rem;
+}
+
+/* -------------------------------- SHAPE 8 (Elephant) --------------------- */
+
+.shape-8 {
+    background: #998235;
+}
+
+.shape-8 div {
+    background: #1a4341;
+}
+
+.shape-8 div:nth-child(2) {
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.shape-8 div:nth-child(2) span {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: #1a4341;
+    border: 0.5rem solid #998235
+}
+
+.shape-8 div:nth-child(2)::before {
+    content: "";
+    height: 1.2rem;
+    width: 80%;
+    background-color: #1a4341;
+    position: absolute;
+    top: 35%;
+}
+
+.shape-8 div:nth-child(2)::after {
+    content: "";
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    border: 0.9rem solid transparent;
+    border-top-color: white;
+    border-left-color: white;
+    position: absolute;
+    bottom: -3rem;
+    transform: rotate(45deg)
+}
+
+.shape-8 div:nth-child(1), .shape-8 div:nth-child(3) {
+    height: 9rem;
+    width: 3rem;
+    border-radius: 50%;
+    position: relative;
+}
+
+.shape-8 div:nth-child(1)::before, .shape-8 div:nth-child(3)::before {
+    content: "";
+    width: 82%;
+    height: 100%;
+    background: #0b2429;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+}
+
+.shape-8 div:nth-child(3)::before {
+    left: 0;
+}
+
+
+.shape-8::before {
+    content: "";
+    height: 42%;
+    width: 1.7rem;
+    background: #0b2429;
+    border-radius: 0.6rem 0.6rem 0 0;
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+}
+
+/* -------------------------------- SHAPE 9 (sun rise) --------------------- */
+
+.shape-9 span:nth-child(1) {
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    background: #fff1c1;
+}
+.shape-9 span:nth-child(2) {
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    background: #fff1c1;
 }
