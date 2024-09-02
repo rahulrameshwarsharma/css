@@ -416,17 +416,35 @@ body > div {
     bottom: 0;
 }
 
-/* -------------------------------- SHAPE 9 (sun rise) --------------------- */
-
-.shape-9 span:nth-child(1) {
-    height: 9rem;
-    width: 9rem;
-    border-radius: 50%;
-    background: #fff1c1;
+/* -------------------------------- SHAPE 9 (Gallery) --------------------- */
+.shape-9 {
+    background-color: #293462;
 }
-.shape-9 span:nth-child(2) {
-    height: 9rem;
-    width: 9rem;
+.shape-9 span {
+    height: 12rem;
+    width: 12rem;
     border-radius: 50%;
     background: #fff1c1;
+    position: relative;
+    overflow: hidden;
+}
+.shape-9 span:nth-child(1)::before {
+    content: "";
+    height: 6rem;
+    width: 6rem;
+    background: #fe5f55;
+    position: absolute;
+    bottom: -3rem;
+    transform: rotate(45deg);
+}
+
+.shape-9 span:nth-child(1)::after {
+    content: "";
+    height: 9rem;
+    width: 9rem;
+    background: #fe5f55;
+    position: absolute;
+    bottom: -3rem;
+    right: -1rem;
+    transform: rotate(45deg);
 }
