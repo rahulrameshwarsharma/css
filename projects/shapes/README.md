@@ -1,2 +1,0 @@
-makar rashi : Kha : Khushi;
-
