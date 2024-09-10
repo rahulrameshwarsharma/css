@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    margin-right: 200px;
+    color: #f08804;
+}
+footer {
+    color: rgba(255, 255, 255, 0.75);
+    background-color: #0f1111;
+    text-align: center;
+}
+
+#navbar {
+    height: 60px;
+    background-color: #0f1111;
+}
+.maincontainer {
+    color: white;
+    height: 650px;
+}
+#boxgreen {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+#boxyellow {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+#boxblue {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+.contentbox {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+}
