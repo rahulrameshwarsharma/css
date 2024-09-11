@@ -2,17 +2,25 @@
 *07 Jan 2024 Sunday morning 7am*
 ## Put the below code at the top of every css file
 - **Below code will help to fix any default css already applied**
-    * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    border: border-box;
-}
 
-##  css changes priority defined by the order of tag in head tag
-<head>
+```
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+```
+
+##  css changes priority defined by the order of tag in head tag.
+
 if styles tag is written first, then it will be excuted first and then external css, which gives output of external css
 because in css, changes will be display as per the last executed code.
+```
+<head>
 <style>
     body{
         color: blue;
@@ -21,6 +29,7 @@ because in css, changes will be display as per the last executed code.
 <link rel="stylesheet">
 
 </head>
+```
 
 ## css properties
     Font-weight ranges between 100 - 900 (lighter, bold , bolder).
@@ -29,14 +38,17 @@ because in css, changes will be display as per the last executed code.
     ** to make a circle give height and width equal value px, and border radius to 50%.
 
 ## Display properties
-    ** block elements occupies 100% width (ex: div, h1).
-    ** inline elements occupies width as per content in it (ex: span, button, input, a). also it don't allow to add margin & padding from top and bottom, only marging and padding from right and left will be applied by default.
-    ** inline-block elements allow us to add margin and padding from all sides.
-    ** display none property removes elements from the page, it doesn't reserves any space for the elements.
-    ** visibility: hidden property reserves space for the element it just disappears form the place.
+
+-    block elements occupies 100% width (ex: div, h1).
+-    inline elements occupies width as per content in it (ex: span, button, input, a). also it don't allow to add margin & padding from top and bottom, only marging and padding from right and left will be applied by default.
+-    inline-block elements allow us to add margin and padding from all sides.
+-    display none property removes elements from the page, it doesn't reserves any space for the elements.
+-    visibility: hidden property reserves space for the element it just disappears form the place.
 
 ## units in css
-    px is the absolute unit in css, where as %, em, rem, vh and vw are the relative units.
+
+####     px is the absolute unit in css, where as %, em, rem, vh and vw are the relative units.
+
 - %: it is used to give value according to parent and child relativity.
 - em: it is relative to the font size of the parent, 2em means (2*font-size of the  parent).
 - rem: (root em) it is relative to font size of text in root elements (like body or html).
@@ -91,37 +103,46 @@ because in css, changes will be display as per the last executed code.
 - Media queries make page responsive according to page size
 
 - **keep color blue till 600px**
-    - @media(max-width: 600px) {
-                                    div {
-                                        background-color: blue;
-                                    }
-                                }
+```
+    - @media(max-width: 600px) 
+    {
+        div { 
+                background-color: blue;
+            }
+    }
+```
 -   **This above code turns the div into blue exactly before page width 600px.*
 
 - **keep color red exactly at 600px**
+```    
     - @media(width: 600px) {
-                                div {
-                                    background-color: red;
-                                } 
-                            }
+                div {
+                    background-color: red;
+                } 
+            }
+```
 -   **This above code turns the div into red exactly at page width 600px.**
 
 - **keep color blue after 600px**
-    - @media(min-width: 600px) {
-                                    div {
-                                        background-color: blue;
-                                    }
-                                }
+```
+- @media(min-width: 600px) {
+                div {
+                    background-color: blue;
+                }
+            }
+```
 
 -   **This above code turns the div into blue exactly after page width 600px.*
 
 **combine media queries together using "and" keyword**
 
+```
 @media (min-width: 200px) and (max-width: 400px) {
     div {
         background-color: orange;
     }
 }
+```
 
 ## Advance css
 *Pseduo class*
