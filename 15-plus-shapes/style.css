@@ -551,27 +551,41 @@ body > div {
 /* -------------------------------- SHAPE 12 (Home) --------------------- */
 
 .shape-12{
-    background: darkgreen;
-    display: inline-block;
+    background: #6592cf;
+    flex-direction: column;
 }
 
-.shape-12 div{
-    margin-left: 5rem;
-    margin-top: 6rem;
+.shape-12 span:first-child {
+    width: 10rem;
+    height: 10rem;
+    border-left: 7rem solid transparent;
+    border-right: 7rem solid transparent;
+    border-bottom: 5rem solid #243d83;
 }
 
-.shape-12 div:nth-child(1) {
-    width: 6.5rem;
-    height: 6.5rem;
-    border: 1rem solid red;
-    transform: rotate(45deg);
+.shape-12 span:last-child::before {
+    content: "";
+    width: 5rem;
+    height: 6px;
+    background: #eeb850;
     position: absolute;
-    top: -2.7rem;
-    margin-left: 6.3rem;
+    top: 0;
+    left: calc(50% - 2.5rem);
 }
-.shape-12 div:nth-child(2) {
-    width: 9.1rem;
-    height: 9.1rem;
-    border: 1rem solid red;
-    background: red;
+
+.shape-12 span:last-child {
+    width: 10rem;
+    height: 8rem;
+    background:#243d83;
+    position: relative;
+}
+
+.shape-12 span:last-child::after {
+    content: "";
+    width: 3rem;
+    height: 4rem;
+    background: #eeb850;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 1.5rem);
 }
