@@ -589,3 +589,20 @@ body > div {
     bottom: 0;
     left: calc(50% - 1.5rem);
 }
+
+/* -------------------------------- SHAPE 13 (Guitar) --------------------- */
+
+.shape-13 {
+    background: #f3ac3c;
+}
+
+.shape-13 {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background: #998235;
+}
+
+.shape-13 div {
+
+}
