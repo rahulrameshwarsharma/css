@@ -1,5 +1,6 @@
 
-*07 Jan 2024 Sunday morning 7am*
+<!-- *07 Jan 2024 Sunday morning 7am* -->
+
 ## Put the below code at the top of every css file
 - **Below code will help to fix any default css already applied**
 
