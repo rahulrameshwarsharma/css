@@ -145,6 +145,8 @@ because in css, changes will be display as per the last executed code.
 }
 ```
 
+<!-- Advance css part -->
+
 ## Advance css
 *Pseduo class*
 - hover : it allows element to change it's css property when we take cursor on them.
